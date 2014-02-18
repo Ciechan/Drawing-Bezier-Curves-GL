@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9803545118AD68F4001E81E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9803545018AD68F4001E81E2 /* Foundation.framework */; };
+		9803545318AD68F4001E81E2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9803545218AD68F4001E81E2 /* CoreGraphics.framework */; };
+		9803545518AD68F4001E81E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9803545418AD68F4001E81E2 /* UIKit.framework */; };
+		9803545718AD68F4001E81E2 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9803545618AD68F4001E81E2 /* GLKit.framework */; };
+		9803545918AD68F4001E81E2 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9803545818AD68F4001E81E2 /* OpenGLES.framework */; };
+		9803545F18AD68F4001E81E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9803545D18AD68F4001E81E2 /* InfoPlist.strings */; };
+		9803546118AD68F4001E81E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9803546018AD68F4001E81E2 /* main.m */; };
+		9803546518AD68F4001E81E2 /* BCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9803546418AD68F4001E81E2 /* BCAppDelegate.m */; };
+		9803547218AD68F4001E81E2 /* BCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9803547118AD68F4001E81E2 /* BCViewController.m */; };
+		9803549718AD6EB3001E81E2 /* BCShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9803549218AD6EB3001E81E2 /* BCShader.m */; };
+		9803549818AD6EB3001E81E2 /* BCLineShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9803549418AD6EB3001E81E2 /* BCLineShader.m */; };
+		9803549918AD6EB3001E81E2 /* BCLineShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 9803549518AD6EB3001E81E2 /* BCLineShader.vsh */; };
+		9803549A18AD6EB3001E81E2 /* BCLineShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 9803549618AD6EB3001E81E2 /* BCLineShader.fsh */; };
+		980354A718AD7041001E81E2 /* BCLineMeshController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980354A118AD7041001E81E2 /* BCLineMeshController.m */; };
+		980354A818AD7041001E81E2 /* BCPointMeshController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980354A318AD7041001E81E2 /* BCPointMeshController.m */; };
+		980354A918AD7041001E81E2 /* BCMeshController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980354A618AD7041001E81E2 /* BCMeshController.m */; };
+		980354AD18AD72B3001E81E2 /* BCLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 980354AC18AD72B3001E81E2 /* BCLine.m */; };
+		980354B018AD72BA001E81E2 /* BCPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 980354AF18AD72BA001E81E2 /* BCPoint.m */; };
+		980354B718AD7503001E81E2 /* BCPointSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 980354B618AD7503001E81E2 /* BCPointSprite.m */; };
+		980354BC18AD78F6001E81E2 /* BCPointShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 980354B918AD78F6001E81E2 /* BCPointShader.m */; };
+		980354BD18AD78F6001E81E2 /* BCPointShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 980354BA18AD78F6001E81E2 /* BCPointShader.vsh */; };
+		980354BE18AD78F6001E81E2 /* BCPointShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 980354BB18AD78F6001E81E2 /* BCPointShader.fsh */; };
+		98E6DF7518AFE12200337184 /* sprites.png in Resources */ = {isa = PBXBuildFile; fileRef = 98E6DF7418AFE12200337184 /* sprites.png */; };
+		98E6DF7A18AFEA7900337184 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98E6DF7918AFEA7900337184 /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9803544D18AD68F4001E81E2 /* DrawingBezierCurves.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingBezierCurves.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9803545018AD68F4001E81E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9803545218AD68F4001E81E2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9803545418AD68F4001E81E2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9803545618AD68F4001E81E2 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		9803545818AD68F4001E81E2 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		9803545C18AD68F4001E81E2 /* DrawingBezierCurves-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DrawingBezierCurves-Info.plist"; sourceTree = "<group>"; };
+		9803545E18AD68F4001E81E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9803546018AD68F4001E81E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9803546218AD68F4001E81E2 /* DrawingBezierCurves-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DrawingBezierCurves-Prefix.pch"; sourceTree = "<group>"; };
+		9803546318AD68F4001E81E2 /* BCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCAppDelegate.h; sourceTree = "<group>"; };
+		9803546418AD68F4001E81E2 /* BCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCAppDelegate.m; sourceTree = "<group>"; };
+		9803547018AD68F4001E81E2 /* BCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCViewController.h; sourceTree = "<group>"; };
+		9803547118AD68F4001E81E2 /* BCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCViewController.m; sourceTree = "<group>"; };
+		9803547A18AD68F4001E81E2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9803549018AD6EB3001E81E2 /* BCShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCShader.h; sourceTree = "<group>"; };
+		9803549118AD6EB3001E81E2 /* BCShader_SubclassHooks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCShader_SubclassHooks.h; sourceTree = "<group>"; };
+		9803549218AD6EB3001E81E2 /* BCShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCShader.m; sourceTree = "<group>"; };
+		9803549318AD6EB3001E81E2 /* BCLineShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCLineShader.h; sourceTree = "<group>"; };
+		9803549418AD6EB3001E81E2 /* BCLineShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCLineShader.m; sourceTree = "<group>"; };
+		9803549518AD6EB3001E81E2 /* BCLineShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = BCLineShader.vsh; sourceTree = "<group>"; };
+		9803549618AD6EB3001E81E2 /* BCLineShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = BCLineShader.fsh; sourceTree = "<group>"; };
+		980354A018AD7041001E81E2 /* BCLineMeshController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCLineMeshController.h; sourceTree = "<group>"; };
+		980354A118AD7041001E81E2 /* BCLineMeshController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCLineMeshController.m; sourceTree = "<group>"; };
+		980354A218AD7041001E81E2 /* BCPointMeshController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCPointMeshController.h; sourceTree = "<group>"; };
+		980354A318AD7041001E81E2 /* BCPointMeshController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCPointMeshController.m; sourceTree = "<group>"; };
+		980354A418AD7041001E81E2 /* BCMeshController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMeshController.h; sourceTree = "<group>"; };
+		980354A518AD7041001E81E2 /* BCMeshController_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMeshController_Private.h; sourceTree = "<group>"; };
+		980354A618AD7041001E81E2 /* BCMeshController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCMeshController.m; sourceTree = "<group>"; };
+		980354AB18AD72B3001E81E2 /* BCLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCLine.h; sourceTree = "<group>"; };
+		980354AC18AD72B3001E81E2 /* BCLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCLine.m; sourceTree = "<group>"; };
+		980354AE18AD72BA001E81E2 /* BCPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCPoint.h; sourceTree = "<group>"; };
+		980354AF18AD72BA001E81E2 /* BCPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCPoint.m; sourceTree = "<group>"; };
+		980354B518AD7503001E81E2 /* BCPointSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCPointSprite.h; sourceTree = "<group>"; };
+		980354B618AD7503001E81E2 /* BCPointSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCPointSprite.m; sourceTree = "<group>"; };
+		980354B818AD78F6001E81E2 /* BCPointShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCPointShader.h; sourceTree = "<group>"; };
+		980354B918AD78F6001E81E2 /* BCPointShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCPointShader.m; sourceTree = "<group>"; };
+		980354BA18AD78F6001E81E2 /* BCPointShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = BCPointShader.vsh; sourceTree = "<group>"; };
+		980354BB18AD78F6001E81E2 /* BCPointShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = BCPointShader.fsh; sourceTree = "<group>"; };
+		98E6DF7418AFE12200337184 /* sprites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprites.png; sourceTree = "<group>"; };
+		98E6DF7918AFEA7900337184 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9803544A18AD68F4001E81E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9803545918AD68F4001E81E2 /* OpenGLES.framework in Frameworks */,
+				9803545318AD68F4001E81E2 /* CoreGraphics.framework in Frameworks */,
+				9803545518AD68F4001E81E2 /* UIKit.framework in Frameworks */,
+				9803545718AD68F4001E81E2 /* GLKit.framework in Frameworks */,
+				9803545118AD68F4001E81E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9803544418AD68F4001E81E2 = {
+			isa = PBXGroup;
+			children = (
+				9803545A18AD68F4001E81E2 /* DrawingBezierCurves */,
+				9803544F18AD68F4001E81E2 /* Frameworks */,
+				9803544E18AD68F4001E81E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9803544E18AD68F4001E81E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9803544D18AD68F4001E81E2 /* DrawingBezierCurves.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9803544F18AD68F4001E81E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9803545018AD68F4001E81E2 /* Foundation.framework */,
+				9803545218AD68F4001E81E2 /* CoreGraphics.framework */,
+				9803545418AD68F4001E81E2 /* UIKit.framework */,
+				9803545618AD68F4001E81E2 /* GLKit.framework */,
+				9803545818AD68F4001E81E2 /* OpenGLES.framework */,
+				9803547A18AD68F4001E81E2 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9803545A18AD68F4001E81E2 /* DrawingBezierCurves */ = {
+			isa = PBXGroup;
+			children = (
+				980354B118AD74F1001E81E2 /* View */,
+				980354AA18AD72A8001E81E2 /* Model */,
+				9803549F18AD6FD6001E81E2 /* MeshControllers */,
+				9803549E18AD6FC4001E81E2 /* Shaders */,
+				9803546318AD68F4001E81E2 /* BCAppDelegate.h */,
+				9803546418AD68F4001E81E2 /* BCAppDelegate.m */,
+				9803547018AD68F4001E81E2 /* BCViewController.h */,
+				9803547118AD68F4001E81E2 /* BCViewController.m */,
+				98E6DF7918AFEA7900337184 /* Images.xcassets */,
+				98E6DF7418AFE12200337184 /* sprites.png */,
+				9803545B18AD68F4001E81E2 /* Supporting Files */,
+			);
+			path = DrawingBezierCurves;
+			sourceTree = "<group>";
+		};
+		9803545B18AD68F4001E81E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9803545C18AD68F4001E81E2 /* DrawingBezierCurves-Info.plist */,
+				9803545D18AD68F4001E81E2 /* InfoPlist.strings */,
+				9803546018AD68F4001E81E2 /* main.m */,
+				9803546218AD68F4001E81E2 /* DrawingBezierCurves-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9803549E18AD6FC4001E81E2 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				9803549018AD6EB3001E81E2 /* BCShader.h */,
+				9803549118AD6EB3001E81E2 /* BCShader_SubclassHooks.h */,
+				9803549218AD6EB3001E81E2 /* BCShader.m */,
+				9803549318AD6EB3001E81E2 /* BCLineShader.h */,
+				9803549418AD6EB3001E81E2 /* BCLineShader.m */,
+				9803549518AD6EB3001E81E2 /* BCLineShader.vsh */,
+				9803549618AD6EB3001E81E2 /* BCLineShader.fsh */,
+				980354B818AD78F6001E81E2 /* BCPointShader.h */,
+				980354B918AD78F6001E81E2 /* BCPointShader.m */,
+				980354BA18AD78F6001E81E2 /* BCPointShader.vsh */,
+				980354BB18AD78F6001E81E2 /* BCPointShader.fsh */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		9803549F18AD6FD6001E81E2 /* MeshControllers */ = {
+			isa = PBXGroup;
+			children = (
+				980354A418AD7041001E81E2 /* BCMeshController.h */,
+				980354A518AD7041001E81E2 /* BCMeshController_Private.h */,
+				980354A618AD7041001E81E2 /* BCMeshController.m */,
+				980354A018AD7041001E81E2 /* BCLineMeshController.h */,
+				980354A118AD7041001E81E2 /* BCLineMeshController.m */,
+				980354A218AD7041001E81E2 /* BCPointMeshController.h */,
+				980354A318AD7041001E81E2 /* BCPointMeshController.m */,
+			);
+			name = MeshControllers;
+			sourceTree = "<group>";
+		};
+		980354AA18AD72A8001E81E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				980354AB18AD72B3001E81E2 /* BCLine.h */,
+				980354AC18AD72B3001E81E2 /* BCLine.m */,
+				980354AE18AD72BA001E81E2 /* BCPoint.h */,
+				980354AF18AD72BA001E81E2 /* BCPoint.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		980354B118AD74F1001E81E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				980354B518AD7503001E81E2 /* BCPointSprite.h */,
+				980354B618AD7503001E81E2 /* BCPointSprite.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9803544C18AD68F4001E81E2 /* DrawingBezierCurves */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9803548A18AD68F5001E81E2 /* Build configuration list for PBXNativeTarget "DrawingBezierCurves" */;
+			buildPhases = (
+				9803544918AD68F4001E81E2 /* Sources */,
+				9803544A18AD68F4001E81E2 /* Frameworks */,
+				9803544B18AD68F4001E81E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrawingBezierCurves;
+			productName = DrawingBezierCurves;
+			productReference = 9803544D18AD68F4001E81E2 /* DrawingBezierCurves.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9803544518AD68F4001E81E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Bartosz Ciechanowski";
+			};
+			buildConfigurationList = 9803544818AD68F4001E81E2 /* Build configuration list for PBXProject "DrawingBezierCurves" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9803544418AD68F4001E81E2;
+			productRefGroup = 9803544E18AD68F4001E81E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9803544C18AD68F4001E81E2 /* DrawingBezierCurves */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9803544B18AD68F4001E81E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98E6DF7518AFE12200337184 /* sprites.png in Resources */,
+				980354BE18AD78F6001E81E2 /* BCPointShader.fsh in Resources */,
+				98E6DF7A18AFEA7900337184 /* Images.xcassets in Resources */,
+				9803549918AD6EB3001E81E2 /* BCLineShader.vsh in Resources */,
+				9803545F18AD68F4001E81E2 /* InfoPlist.strings in Resources */,
+				9803549A18AD6EB3001E81E2 /* BCLineShader.fsh in Resources */,
+				980354BD18AD78F6001E81E2 /* BCPointShader.vsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9803544918AD68F4001E81E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9803547218AD68F4001E81E2 /* BCViewController.m in Sources */,
+				980354A818AD7041001E81E2 /* BCPointMeshController.m in Sources */,
+				980354AD18AD72B3001E81E2 /* BCLine.m in Sources */,
+				980354BC18AD78F6001E81E2 /* BCPointShader.m in Sources */,
+				9803549818AD6EB3001E81E2 /* BCLineShader.m in Sources */,
+				980354B718AD7503001E81E2 /* BCPointSprite.m in Sources */,
+				9803549718AD6EB3001E81E2 /* BCShader.m in Sources */,
+				980354B018AD72BA001E81E2 /* BCPoint.m in Sources */,
+				9803546118AD68F4001E81E2 /* main.m in Sources */,
+				980354A718AD7041001E81E2 /* BCLineMeshController.m in Sources */,
+				980354A918AD7041001E81E2 /* BCMeshController.m in Sources */,
+				9803546518AD68F4001E81E2 /* BCAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9803545D18AD68F4001E81E2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9803545E18AD68F4001E81E2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9803548818AD68F5001E81E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9803548918AD68F5001E81E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9803548B18AD68F5001E81E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawingBezierCurves/DrawingBezierCurves-Prefix.pch";
+				INFOPLIST_FILE = "DrawingBezierCurves/DrawingBezierCurves-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9803548C18AD68F5001E81E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawingBezierCurves/DrawingBezierCurves-Prefix.pch";
+				INFOPLIST_FILE = "DrawingBezierCurves/DrawingBezierCurves-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9803544818AD68F4001E81E2 /* Build configuration list for PBXProject "DrawingBezierCurves" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9803548818AD68F5001E81E2 /* Debug */,
+				9803548918AD68F5001E81E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9803548A18AD68F5001E81E2 /* Build configuration list for PBXNativeTarget "DrawingBezierCurves" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9803548B18AD68F5001E81E2 /* Debug */,
+				9803548C18AD68F5001E81E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9803544518AD68F4001E81E2 /* Project object */;
+}
