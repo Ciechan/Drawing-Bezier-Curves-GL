@@ -11,6 +11,8 @@
 
 #import "BCShader.h"
 
+#import <OpenGLES/ES2/glext.h>
+
 typedef GLKVector2 LineVertex;
 
 static const NSUInteger VertexLimit = USHRT_MAX;

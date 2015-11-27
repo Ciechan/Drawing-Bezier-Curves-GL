@@ -19,6 +19,8 @@
 
 #import "BCPointSprite.h"
 
+#import <OpenGLES/ES2/glext.h>
+
 @interface BCViewController ()
 
 @property (nonatomic, strong) EAGLContext *context;

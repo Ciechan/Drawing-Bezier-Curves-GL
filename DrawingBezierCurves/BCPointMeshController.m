@@ -14,6 +14,7 @@
 
 #import "BCPointSprite.h"
 
+#import <OpenGLES/ES2/glext.h>
 
 typedef struct PointVertex {
     GLKVector2 p;
